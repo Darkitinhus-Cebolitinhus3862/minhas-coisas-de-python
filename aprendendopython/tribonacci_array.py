@@ -23,7 +23,7 @@ def tribonacci_array(num, num2):
         count += 1
         
 n = input("digite os tres numeros iniciais do tribonacci: ")
-if n !=():
+if n != "":
     ns = list(map(int, str(n)))
 else:
     ns = [0, 1 ,1]
