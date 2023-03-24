@@ -9,4 +9,4 @@ else:
         if num > 0:
             print("O número é positivo")
         
-input()
+input('aperte ENTER para finalizar')
