@@ -1,7 +1,12 @@
 def tribonacci_array(num, num2):
+    if num2 != "":
+        n = list(map(int, str(num2)))
+    else:
+        n = [0, 1 ,1]
+    
     nterms = int(num)
 
-    t1, t2, t3 = num2[0], num2[1], num2[2] 
+    t1, t2, t3 = n[0], n[1], n[2] 
     count = 0
     #if e elif para n dar nada errado
     if nterms <= 0:
@@ -22,15 +27,15 @@ def tribonacci_array(num, num2):
         t3 = nth
         count += 1
         
-n = input("digite os tres numeros iniciais do tribonacci: ")
-if n != "":
-    ns = list(map(int, str(n)))
-else:
-    ns = [0, 1 ,1]
+nu = input("digite os tres numeros iniciais do tribonacci: ")
+
 num = input("digite o numero de termos desejados: ")  
 
-print("seram usados", ns,"para o tribonacci com", num, "termos")
+if nu != "":
+    print("seram usados", nu,"para o tribonacci com", num, "termos")
+else:
+    print("seram usados [0, 1, 1] para o tribonacci com", num, "termos")
 input()
-tribonacci_array(num, ns)
+tribonacci_array(num, nu)
 
 input()
