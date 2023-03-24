@@ -6,7 +6,7 @@ def create_phone_number(num):
 n = input("Digite um número de telefone com DDD: ")
 #transforma a entrada em uma lista
 res = list(map(int, str(n)))
-print("The list from number is " + str(res))
+print("A lista é: " + str(res))
 
 input()
 
