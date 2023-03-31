@@ -1,6 +1,6 @@
 def create_phone_number(num):
     #formata a lsita em uma string no formato desejado
-    phone_number = "({}{}) {}{}{}{}-{}{}{}{}".format(*num)
+    phone_number = "({}{}) {}{}{}{}{}-{}{}{}{}".format(*num)
     return phone_number
 
 n = input("Digite um número de telefone com DDD: ")
